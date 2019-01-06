@@ -39,35 +39,35 @@ public class Assessment_Test {
 //		assertEquals("Student: Andy Bosscha (S1110703)", AssessmentScreenModules.selectedAssessmentStudent(driver).getText());
 		
 		//Page: Beheren -> Zelfstandigheid. check keywords
-		assertEquals("Aanpak. gestructureerdheid, samenhang, flexibiliteit", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpak(driver).getAttribute("innerText"));
-		assertEquals("Initiatief. grip, sturing, omgaan met risico’s", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordInitiatief(driver).getAttribute("innerText"));
-		assertEquals("Keuzes maken. bronnen, methoden, technieken", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordKeuzesMaken(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordAanpak(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpak(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordInitiatief(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordInitiatief(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordKeuzesMaken(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordKeuzesMaken(driver).getAttribute("innerText"));
 		System.out.println("Beheren -> Zelfstandigheid: Sleutelwoorden aanwezig en correct");
 		
 		//Page: Beheren -> Zelfstandigheid. check excellent 9+
-		assertEquals("Werkt volgens geplande stappen naar een mijlpaal, verwerkt nieuwe inzichten; blijft beheeraanpak valideren", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpakExcellent(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordAanpakExcellent(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpakExcellent(driver).getAttribute("innerText"));
 //		AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpakExcellent(driver).isEnabled();
 //		AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpakExcellent(driver).click();
-		assertEquals("Reageert en anticipeert uit zichzelf op knelpunten en meevallers en vangt onverwachte situaties op", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordInitiatiefExcellent(driver).getAttribute("innerText"));
-		assertEquals("Verzamelt alternatieven, onderzoekt de impact, maakt onderbouwde keuzes; blijft gekozen routes en kaders valideren", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordKeuzesMakenExcellent(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordInitiatiefExcellent(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordInitiatiefExcellent(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordKeuzesMakenExcellent(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordKeuzesMakenExcellent(driver).getAttribute("innerText"));
 		System.out.println("Beheren -> Zelfstandigheid: beoordelingen onder Excellent(9+) aanwezig en correct");
 		
 		//Page: Beheren -> Zelfstandigheid. check Goed 8
-		assertEquals("Werkt volgens geplande stappen naar een mijlpaal en verwerkt nieuwe inzichten", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpakGoed(driver).getAttribute("innerText"));
-		assertEquals("Reageert en anticipeert uit zichzelf op knelpunten en meevallers", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordInitiatiefGoed(driver).getAttribute("innerText"));
-		assertEquals("Verzamelt alternatieven, onderzoekt de impact en maakt goed onderbouwde keuzes", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordKeuzesMakenGoed(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordAanpakGoed(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpakGoed(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordInitiatiefGoed(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordInitiatiefGoed(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordKeuzesMakenGoed(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordKeuzesMakenGoed(driver).getAttribute("innerText"));
 		System.out.println("Beheren -> Zelfstandigheid: beoordelingen onder Goed(8) aanwezig en correct");
 		
 		//Page: Beheren -> Zelfstandigheid. check Voldoende 6
-		assertEquals("Werkt volgens geplande stappen naar een mijlpaal", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpakVoldoende(driver).getAttribute("innerText"));
-		assertEquals("Reageert uit zichzelf op knelpunten en meevallers", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordInitiatiefVoldoende(driver).getAttribute("innerText"));
-		assertEquals("Verzamelt alternatieven, onderzoekt de impact en maakt keuzes", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordKeuzesMakenVoldoende(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordAanpakVoldoende(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpakVoldoende(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordInitiatiefVoldoende(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordInitiatiefVoldoende(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordKeuzesMakenVoldoende(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordKeuzesMakenVoldoende(driver).getAttribute("innerText"));
 		System.out.println("Beheren -> Zelfstandigheid: beoordelingen onder Voldoende (6) aanwezig en correct");
 		
 		//Page: Beheren -> Zelfstandigheid. check Niet Voldaan 4-
-		assertEquals("Ongestructureerde beheeraanpak leidt tot weinig grip en sturing", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpakNietVoldaan(driver).getAttribute("innerText"));
-		assertEquals("Is uit zichzelf weinig geneigd eigen project en proces te beheren", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordInitiatiefNietVoldaan(driver).getAttribute("innerText"));
-		assertEquals("Toont weinig vaardigheid in het maken van geschikte keuzes", AssessmentScreenModules.beherenZelfstandigheidSleutelwoordKeuzesMakenNietVoldaan(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordAanpakNietVoldaan(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordAanpakNietVoldaan(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordInitiatiefNietVoldaan(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordInitiatiefNietVoldaan(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.ZelfstandigheidSleutelwoordKeuzesMakenNietVoldaan(), AssessmentScreenModules.beherenZelfstandigheidSleutelwoordKeuzesMakenNietVoldaan(driver).getAttribute("innerText"));
 		System.out.println("Beheren -> Zelfstandigheid: beoordelingen onder Niet Voldaan (4-) aanwezig en correct");
 		
 		//Check pageNumbert and click next to open page: Gedrag, then check pageNumber again
@@ -77,8 +77,8 @@ public class Assessment_Test {
 
 		
 		//Page: Beheren -> Gedrag. check sleutelwoorden
-		assertEquals("Effectiviteit. mate van bijdrage aan de oplossing van de gegeven situatie", AssessmentScreenModules.beherenGedragSleutelwoordEffectiviteit(driver).getAttribute("innerText"));
-		assertEquals("Zelfkritisch. professioneel functioneren", AssessmentScreenModules.beherenGedragSleutelwoordZelfkritisch(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.GedragSleutelwoordEffectiviteit(), AssessmentScreenModules.beherenGedragSleutelwoordEffectiviteit(driver).getAttribute("innerText"));
+		assertEquals(data.AssessmentScreenBeheren.GedragSleutelwoordZelfkritisch(), AssessmentScreenModules.beherenGedragSleutelwoordZelfkritisch(driver).getAttribute("innerText"));
 		System.out.println("Beheren -> Gedrag: sleutelwoorden aanwezig en correct");
 
 	}
