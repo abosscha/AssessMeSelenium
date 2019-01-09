@@ -28,7 +28,7 @@ public class Assessment_Test {
 
 		// is assessment available and correct?
 		AssessmentSelectionModules.assessmentCard(driver).click();
-		assertEquals(StudentData.studentName, AssessmentSelectionModules.assessmentStudent(driver).getText());
+		assertEquals(StudentData.student1Name, AssessmentSelectionModules.assessmentStudent(driver).getText());
 		System.out.println("geselecteerde assessment:" + AssessmentSelectionModules.assessmentCard(driver).getText());
 
 		// open assessment

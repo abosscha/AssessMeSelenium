@@ -13,7 +13,7 @@ public class AssessmentSelectionModules {
 	}
 
 	public static WebElement assessmentCard(WebDriver driver) {
-		return driver.findElement(By.cssSelector("#cardInfoContainer-" + StudentData.studentNumber));
+		return driver.findElement(By.cssSelector("#cardInfoContainer-" + StudentData.student1Number));
 	}
 
 	public static WebElement assessmentStudent(WebDriver driver) {
