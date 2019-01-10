@@ -12,6 +12,7 @@ import data.StudentData;
 import modules.AssessmentScreenModules;
 import modules.AssessmentSelectionModules;
 import modules.DefaultModules;
+import modules.MenuModules;
 
 public class Assessment_Test {
 
@@ -35,7 +36,7 @@ public class Assessment_Test {
 		AssessmentSelectionModules.assessmeButton(driver).click();
 
 		// is assessmentscreen loaded?
-		assertEquals(true, AssessmentScreenModules.homeButton(driver).isDisplayed());
+		assertEquals(true, MenuModules.homeButtonInOpenedAssessment(driver).isDisplayed());
 
 // Page: Beheren -> Zelfstandigheid. check keywords
 		assertEquals(data.AssessmentTableData.BeherenZelfstandigheidSleutelwoordAanpak,

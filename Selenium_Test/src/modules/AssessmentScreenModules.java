@@ -25,10 +25,6 @@ public class AssessmentScreenModules {
 		return driver.findElement(By.cssSelector("#Gedrag-tablink"));
 	}
 
-	public static WebElement homeButton(WebDriver driver) {
-		return driver.findElement(By.cssSelector("#buttonHome"));
-	}
-
 	public static WebElement selectedAssessmentStudent(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"main\"]/div/div[1]/div/div"));
 	}
