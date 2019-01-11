@@ -4,7 +4,6 @@ package main;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-// Module imports
 import init.Init;
 import suite.Suite;
 
@@ -13,11 +12,11 @@ public class Main {
 	static WebDriver driver = null;
 
 	@Test
-	public void Run(){
+	public void Run() {
 
 		// Initialize the Test Run
 		driver = Init.setupBeforeTest();
-		Init.setupBeforeMethod(driver);
+//		Init.setupBeforeMethod(driver);
 
 		// Run the suite
 		Suite.testTheSuite(driver);
