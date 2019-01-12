@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 import data.AssessmentTableData;
 import data.LoginData;
-import data.StudentData;
+import data.PersonData;
 //module imports
 import modules.AssessmentScreenModules;
 import modules.AssessmentSelectionModules;
@@ -29,7 +29,7 @@ public class Assessment_Test {
 
 		// is assessment available and correct?
 		AssessmentSelectionModules.assessmentCard(driver).click();
-		assertEquals(StudentData.student1Name, AssessmentSelectionModules.assessmentStudent(driver).getText());
+		assertEquals(PersonData.person1Name, AssessmentSelectionModules.assessmentStudent(driver).getText());
 		System.out.println("geselecteerde assessment:" + AssessmentSelectionModules.assessmentCard(driver).getText());
 
 		// open assessment

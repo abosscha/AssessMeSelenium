@@ -26,6 +26,7 @@ public class DefaultModules {
 
 	public static void endTestcase(WebDriver driver) {
 		Init.tearDownAfterMethod(driver);
+		waitForLoad(5000);
 	}
 
 }

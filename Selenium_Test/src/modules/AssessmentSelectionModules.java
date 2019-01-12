@@ -4,7 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
-import data.StudentData;
+import data.PersonData;
 
 public class AssessmentSelectionModules {
 
@@ -15,7 +15,7 @@ public class AssessmentSelectionModules {
 
 	// assessmenntcard
 	public static WebElement assessmentCard(WebDriver driver) {
-		return driver.findElement(By.cssSelector("#cardInfoContainer-" + StudentData.student1Number));
+		return driver.findElement(By.cssSelector("#cardInfoContainer-" + PersonData.person1Number));
 	}
 
 	// studentname

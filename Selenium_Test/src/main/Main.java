@@ -22,8 +22,8 @@ public class Main {
 		Suite.testTheSuite(driver);
 
 		// And tear it down...
-		Init.tearDownAfterMethod(driver);
-		Init.tearDownAfterTest(driver);
+//		Init.tearDownAfterMethod(driver);
+//		Init.tearDownAfterTest(driver);
 
 	}
 

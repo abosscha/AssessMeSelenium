@@ -25,8 +25,8 @@ public class Login_Test {
 		LoginPageModules.loginButton(driver).isDisplayed();
 
 		// login with correct user
-		LoginPageModules.userNameEmailField(driver).sendKeys(LoginData.CorrectUserName);
-		LoginPageModules.passwordField(driver).sendKeys(LoginData.CorrectPassword);
+		LoginPageModules.userNameEmailField(driver).sendKeys(LoginData.AdminUsername);
+		LoginPageModules.passwordField(driver).sendKeys(LoginData.AdminPassword);
 		LoginPageModules.loginButton(driver).click();
 
 		// check if user is logged in
