@@ -59,7 +59,7 @@ public class AddAssessments_Test {
 
 		// check if new assessmentPopup is shown
 		DefaultModules.waitForLoad(1000);
-		assertEquals(true, AddAssessmentPopUpModules.tabAssessmentInfo(driver).isDisplayed());
+		assertEquals(true, AddAssessmentPopUpModules.selectStudentDropdown(driver).isDisplayed());
 
 		// add assessment
 		AddAssessmentPopUpModules.selectStudentDropdown(driver)
@@ -69,8 +69,6 @@ public class AddAssessments_Test {
 		AddAssessmentPopUpModules.selectPeriodFrom(driver).sendKeys("01/02/2019");
 		AddAssessmentPopUpModules.selectPeriodTo(driver).sendKeys("01/02/2019");
 		AddAssessmentPopUpModules.selectDateAssessment(driver).sendKeys("01/02/2019");
-		AddAssessmentPopUpModules.tabBetrokkenPersonen(driver).click();
-		DefaultModules.waitForLoad(1000);
 		AddAssessmentPopUpModules.selectEersteExaminator(driver)
 				.sendKeys(PersonData.person3Name + " " + PersonData.person3Number);
 		AddAssessmentPopUpModules.selectTweedeExaminator(driver)
@@ -80,6 +78,7 @@ public class AddAssessments_Test {
 		AddAssessmentPopUpModules.saveAssessmentButton(driver).click();
 
 		// check if assessment is created
+		DefaultModules.waitForLoad(1000);
 		driver.navigate().refresh();
 		assertEquals(PersonData.person1Name + " " + PersonData.person1Number,
 				AddAssessmentModules.selectedAssessmentStudent(driver).getText());
@@ -87,9 +86,9 @@ public class AddAssessments_Test {
 				AddAssessmentModules.selectedAssessmentVOECode(driver).getText());
 		assertEquals(CompanyData.company1Name + " " + CompanyData.company1City,
 				AddAssessmentModules.selectedAssessmentCompany(driver).getText());
-		assertEquals("01/02/2019", AddAssessmentModules.selectedAssessmentPeriodFrom(driver).getText());
-		assertEquals("01/02/2019", AddAssessmentModules.selectedAssessmentPeriodTo(driver).getText());
-		assertEquals("01/02/2019", AddAssessmentModules.selectedAssessmentDate(driver).getText());
+		assertEquals("02/02/2019", AddAssessmentModules.selectedAssessmentPeriodFrom(driver).getText());
+		assertEquals("02/02/2019", AddAssessmentModules.selectedAssessmentPeriodTo(driver).getText());
+		assertEquals("02/02/2019", AddAssessmentModules.selectedAssessmentDate(driver).getText());
 		assertEquals(PersonData.person3Name + " " + PersonData.person3Number,
 				AddAssessmentModules.selectedAssessmentEersteExaminator(driver).getText());
 		assertEquals(PersonData.person4Name + " " + PersonData.person4Number,

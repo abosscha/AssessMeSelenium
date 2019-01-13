@@ -39,7 +39,7 @@ public class AddPersonPopUpModules {
 	// selected person dropdown role: 1e examinator, 2e Examinator, Gecommitteerde,
 	// Administrator, Student
 	public static WebElement selectedPersonRoleDropdown(WebDriver driver) {
-		return driver.findElement(By.xpath("//*[@id=\"rollen\"]/div[1]/div/input"));
+		return driver.findElement(By.xpath("//*[@id=\"Rollen\"]/div/div/input"));
 	}
 
 	// save person button

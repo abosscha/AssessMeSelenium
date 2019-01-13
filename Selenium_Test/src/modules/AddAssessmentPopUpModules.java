@@ -6,69 +6,65 @@ import org.openqa.selenium.WebElement;
 
 public class AddAssessmentPopUpModules {
 
-	// Tab assessmentInfo
-	public static WebElement tabAssessmentInfo(WebDriver driver) {
-		return driver.findElement(By.xpath("/html/body/div[2]/div/div[1]/div/div/form/div[2]/div/ul/li[1]/a"));
-	}
-
-	// Tab BetrokkenPersonen
-	public static WebElement tabBetrokkenPersonen(WebDriver driver) {
-		return driver.findElement(By.xpath("/html/body/div[2]/div/div[1]/div/div/form/div[2]/div/ul/li[2]/a"));
-	}
-
-	// Tab assessmentInfo studentdropdown
+	// Pop-up new assessment studentdropdown
 	public static WebElement selectStudentDropdown(WebDriver driver) {
-		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.StudentID\"]"));
+		return driver.findElement(
+				By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.ManageAssessment.StudentID\"]"));
 	}
 
-	// Tab assessmentInfo VOECodeDropdown
+	// Pop-up new assessment VOECodeDropdown
 	public static WebElement selectVOECodeDropdown(WebDriver driver) {
-		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.VOEcode\"]"));
+		return driver.findElement(
+				By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.ManageAssessment.VOEcode\"]"));
 	}
 
-	// Tab assessmentInfo CompanyDropdown
+	// Pop-up new assessment CompanyDropdown
 	public static WebElement selectCompanyDropdown(WebDriver driver) {
-		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.BedrijfsID\"]"));
+		return driver.findElement(
+				By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.ManageAssessment.BedrijfsID\"]"));
 	}
 
-	// Tab assessmentInfo PeriodFrom
+	// Pop-up new assessment PeriodFrom
 	public static WebElement selectPeriodFrom(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"PeriodeVan_input\"]"));
 	}
 
-	// Tab assessmentInfo PeriodTo
+	// Pop-up new assessment PeriodTo
 	public static WebElement selectPeriodTo(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"PeriodeTot_input\"]"));
 	}
 
-	// Tab assessmentInfo DateAssessment
+	// Pop-up new assessment DateAssessment
 	public static WebElement selectDateAssessment(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"DatumAssessment_input\"]"));
 	}
 
-	// Tab assessmentInfo SaveAssessmentButton
+	// Pop-up new assessment SaveAssessmentButton
 	public static WebElement saveAssessmentButton(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"Submit\"]"));
 	}
 
-	// Tab assessmentInfo CancelsaveAssessmentButton
+	// Pop-up new assessment CancelsaveAssessmentButton
 	public static WebElement cancelSaveAssessmentButton(WebDriver driver) {
 		return driver.findElement(By.xpath("/html/body/div[2]/div/div[1]/div/div/form/div[3]/div/div[2]/button"));
 	}
 
-	// Tab BetrokkenPersonen EersteExaminator
+	// Pop-up new assessment EersteExaminator
 	public static WebElement selectEersteExaminator(WebDriver driver) {
-		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.Examinator1\"]"));
+		return driver.findElement(
+				By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.ManageAssessment.Examinator1\"]"));
 	}
 
-	// Tab BetrokkenPersonen TweedeExaminator
+	// Pop-up new assessment TweedeExaminator
 	public static WebElement selectTweedeExaminator(WebDriver driver) {
-		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.Examinator2\"]"));
+		return driver.findElement(
+				By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.ManageAssessment.Examinator2\"]"));
 	}
 
-	// Tab BetrokkenPersonen EersteExaminator
+	// Pop-up new assessment EersteExaminator
 	public static WebElement selectGecommitteerde(WebDriver driver) {
-		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.Gecommiteerde\"]"));
+		return driver.findElement(
+				By.xpath("//*[@id=\"ManageAssessmentScreen.NewAssessmentDialog.ManageAssessment.Gecommiteerde\"]"));
 	}
 
 }

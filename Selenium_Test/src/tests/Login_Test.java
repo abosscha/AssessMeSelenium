@@ -34,7 +34,7 @@ public class Login_Test {
 		DefaultModules.logOutButton(driver).isEnabled();
 
 		// log testoutcome
-		System.out.println("testgeval: Juist inloggen Is uitgevoerd en OK");
+		System.out.println("Login_Test loginCorrectly = OK");
 
 		// end testcase
 		DefaultModules.endTestcase(driver);
@@ -60,7 +60,7 @@ public class Login_Test {
 		assertEquals(LoginData.MessageForWrongLogin, LoginPageModules.wrongLoginError(driver).getText());
 
 		// log testoutcome
-		System.out.println("testgeval: foutief inloggen Is uitgevoerd en OK");
+		System.out.println("Login_Test loginWithWrongUsernameAndWrongPassword = OK");
 
 		// end testcase
 		DefaultModules.endTestcase(driver);
