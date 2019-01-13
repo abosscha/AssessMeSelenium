@@ -1,8 +1,4 @@
 /tests/
-/data/
-/modules/
 /suite/
-/testdata/
-/init/
-/main/
-/setup/
+/modules/
+/data/

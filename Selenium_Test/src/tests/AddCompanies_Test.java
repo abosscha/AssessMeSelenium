@@ -37,6 +37,7 @@ public class AddCompanies_Test {
 		assertEquals("Telefoonnummer", AddCompanyModules.availableCompaniesTableHeader(driver, 1, 8).getText());
 
 		// end testcase
+		System.out.println("AddCompanies_Test checkCompanyScreenDataTestcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -61,8 +62,8 @@ public class AddCompanies_Test {
 		AddCompanyPopUpModules.countryField(driver).isDisplayed();
 
 		// add company
-		AddCompanyPopUpModules.nameField(driver).sendKeys(CompanyData.company1Name);
-		AddCompanyPopUpModules.streetNameField(driver).sendKeys(CompanyData.company1StreetName);
+		AddCompanyPopUpModules.nameField(driver).sendKeys(CompanyData.company1Name + "bedrijf");
+		AddCompanyPopUpModules.streetNameField(driver).sendKeys(CompanyData.company1StreetName + "rare naam");
 		AddCompanyPopUpModules.houseNumberField(driver).sendKeys(CompanyData.company1HouseNumber);
 		AddCompanyPopUpModules.houseNumberAdditionField(driver).sendKeys(CompanyData.company1HouseNumberAddition);
 		AddCompanyPopUpModules.postalCodeField(driver).sendKeys(CompanyData.company1PostalCode);
@@ -75,6 +76,52 @@ public class AddCompanies_Test {
 		// check if company has been added
 		DefaultModules.waitForLoad(2000);
 		driver.navigate().refresh();
+		assertEquals(CompanyData.company1Name + "bedrijf", AddCompanyModules.selectedCompanyName(driver).getText());
+		assertEquals(CompanyData.company1StreetName + "rare naam",
+				AddCompanyModules.selectedCompanyStreetName(driver).getText());
+		assertEquals(CompanyData.company1HouseNumber, AddCompanyModules.selectedCompanyHouseNumber(driver).getText());
+		assertEquals(CompanyData.company1HouseNumberAddition,
+				AddCompanyModules.selectedCompanyHouseNumberAddition(driver).getText());
+		assertEquals(CompanyData.company1PostalCode, AddCompanyModules.selectedCompanyPostalCode(driver).getText());
+		assertEquals(CompanyData.company1City, AddCompanyModules.selectedCompanyCity(driver).getText());
+		assertEquals(CompanyData.company1Country, AddCompanyModules.selectedCompanyCountry(driver).getText());
+		assertEquals(CompanyData.company1TelephoneNumber,
+				AddCompanyModules.selectedCompanyPhoneNumber(driver).getText());
+
+		// end testcase
+		System.out.println("AddCompanies_Test addCompanyOneTestcase = OK");
+		DefaultModules.endTestcase(driver);
+	}
+
+	public static void editCompanyOneTestcase(WebDriver driver) {
+
+		// initialize testcase
+		DefaultModules.startTestcase(driver);
+
+		// Login
+		ReusableTestParts.loginToAssessMe(driver, LoginData.AdminUsername, LoginData.AdminPassword);
+		System.out.println("Login geslaagd");
+		// open menu for managing persons
+		MenuModules.MenuDropdownBeheer(driver).click();
+		MenuModules.MenuItemBedrijven(driver).click();
+		AddCompanyModules.addCompanyButton(driver).isDisplayed();
+		System.out.println("Pagina voor beheren bedrijven is geopend");
+
+		// edit company1
+		AddCompanyModules.editCompanyButton(driver).click();
+
+		// check if editpage is opened
+		assertEquals("text", AddCompanyModules.editSelectedCompanyCity(driver).getAttribute("type"));
+
+		// edit company
+		AddCompanyModules.editSelectedCompanyName(driver).clear();
+		AddCompanyModules.editSelectedCompanyName(driver).sendKeys(CompanyData.company1Name);
+		AddCompanyModules.editSelectedCompanyStreetName(driver).clear();
+		AddCompanyModules.editSelectedCompanyStreetName(driver).sendKeys(CompanyData.company1StreetName);
+		AddCompanyModules.saveEditCompanyButton(driver).click();
+
+		// check if company has been added
+		DefaultModules.waitForLoad(2000);
 		assertEquals(CompanyData.company1Name, AddCompanyModules.selectedCompanyName(driver).getText());
 		assertEquals(CompanyData.company1StreetName, AddCompanyModules.selectedCompanyStreetName(driver).getText());
 		assertEquals(CompanyData.company1HouseNumber, AddCompanyModules.selectedCompanyHouseNumber(driver).getText());
@@ -87,6 +134,7 @@ public class AddCompanies_Test {
 				AddCompanyModules.selectedCompanyPhoneNumber(driver).getText());
 
 		// end testcase
+		System.out.println("AddCompanies_Test editCompanyOneTestcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -136,6 +184,7 @@ public class AddCompanies_Test {
 				AddCompanyModules.selectedCompanyPhoneNumber(driver).getText());
 
 		// end testcase
+		System.out.println("AddCompanies_Test addCompanyTwoTestcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -185,6 +234,7 @@ public class AddCompanies_Test {
 				AddCompanyModules.selectedCompanyPhoneNumber(driver).getText());
 
 		// end testcase
+		System.out.println("AddCompanies_Test addCompanyThreeTestcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -234,6 +284,7 @@ public class AddCompanies_Test {
 				AddCompanyModules.selectedCompanyPhoneNumber(driver).getText());
 
 		// end testcase
+		System.out.println("AddCompanies_Test addCompanyFourTestcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -283,6 +334,7 @@ public class AddCompanies_Test {
 				AddCompanyModules.selectedCompanyPhoneNumber(driver).getText());
 
 		// end testcase
+		System.out.println("AddCompanies_Test addCompanyFiveTestcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 

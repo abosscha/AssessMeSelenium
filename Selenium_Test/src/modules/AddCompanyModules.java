@@ -23,6 +23,11 @@ public class AddCompanyModules {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[1]/div[2]/button"));
 	}
 
+	// save edited company
+	public static WebElement saveEditCompanyButton(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"Submit\"]"));
+	}
+
 	// add Company button
 	public static WebElement addCompanyButton(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[1]/div[1]/button"));
@@ -38,9 +43,19 @@ public class AddCompanyModules {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[2]/div[2]/div"));
 	}
 
+	// selected company overview edit CompanyName
+	public static WebElement editSelectedCompanyName(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"Naam\"]"));
+	}
+
 	// selected company overview CompanyStreetName
 	public static WebElement selectedCompanyStreetName(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[3]/div[2]/div"));
+	}
+
+	// selected company overview editCompanyStreetName
+	public static WebElement editSelectedCompanyStreetName(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"Straatnaam\"]"));
 	}
 
 	// selected company overview HouseNumber
@@ -48,9 +63,19 @@ public class AddCompanyModules {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[4]/div[2]/div"));
 	}
 
+	// selected company overview editHouseNumber
+	public static WebElement editSelectedCompanyHouseNumber(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"Huisnummer\"]"));
+	}
+
 	// selected company overview HouseNumberAddition
 	public static WebElement selectedCompanyHouseNumberAddition(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[5]/div[2]/div"));
+	}
+
+	// selected company overview editHouseNumberAddition
+	public static WebElement editSelectedCompanyHouseNumberAddition(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"Toevoeging\"]"));
 	}
 
 	// selected company overview PostalCode
@@ -58,9 +83,19 @@ public class AddCompanyModules {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[6]/div[2]/div"));
 	}
 
+	// selected company overview editPostalCode
+	public static WebElement editSelectedCompanyPostalCode(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"Postcode\"]"));
+	}
+
 	// selected company overview City
 	public static WebElement selectedCompanyCity(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[7]/div[2]/div"));
+	}
+
+	// selected company overview edit City
+	public static WebElement editSelectedCompanyCity(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"Plaats\"]"));
 	}
 
 	// selected company overview Country
@@ -68,8 +103,18 @@ public class AddCompanyModules {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[8]/div[2]/div"));
 	}
 
+	// selected company overview editCountry
+	public static WebElement editSelectedCompanyCountry(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"Land\"]"));
+	}
+
 	// selected company overview PhoneNumber
 	public static WebElement selectedCompanyPhoneNumber(WebDriver driver) {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[9]/div[2]/div"));
+	}
+
+	// selected company overview editPhoneNumber
+	public static WebElement editSelectedCompanyPhoneNumber(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"Telefoonnummer\"]"));
 	}
 }

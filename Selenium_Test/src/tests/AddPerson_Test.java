@@ -29,7 +29,7 @@ public class AddPerson_Test {
 
 		// Controleer inhoud pagina
 		assertEquals("Naam", AddPersonModules.availablePersonsTableHeader(driver, 1, 1).getText());
-		assertEquals("Studentnummer", AddPersonModules.availablePersonsTableHeader(driver, 1, 2).getText());
+		assertEquals("Edunummer", AddPersonModules.availablePersonsTableHeader(driver, 1, 2).getText());
 		assertEquals("Telefoonnummer", AddPersonModules.availablePersonsTableHeader(driver, 1, 3).getText());
 		assertEquals("Emailadres", AddPersonModules.availablePersonsTableHeader(driver, 1, 4).getText());
 		AddPersonModules.addPersonButton(driver).isDisplayed();
@@ -42,6 +42,7 @@ public class AddPerson_Test {
 		assertEquals("", AddPersonModules.selectedPersonPassword(driver).getText());
 
 		// end testcase
+		System.out.println("Addperson_test check screen data = OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -93,6 +94,7 @@ public class AddPerson_Test {
 		assertEquals(PersonData.person1Role, AddPersonModules.selectedPersonRole(driver).getText());
 
 		// end testcase
+		System.out.println("AddPerson_Test addStudent1Testcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -144,6 +146,7 @@ public class AddPerson_Test {
 		assertEquals(PersonData.person2Role, AddPersonModules.selectedPersonRole(driver).getText());
 
 		// end testcase
+		System.out.println("AddPerson_Test addStudent2Testcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -199,6 +202,7 @@ public class AddPerson_Test {
 		assertEquals(PersonData.person2Role2 + ", " + PersonData.person2Role,
 				AddPersonModules.selectedPersonRole(driver).getText());
 		// end testcase
+		System.out.println("AddPerson_Test EditStudent2Testcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -249,6 +253,7 @@ public class AddPerson_Test {
 		assertEquals(PersonData.person3Role, AddPersonModules.selectedPersonRole(driver).getText());
 
 		// end testcase
+		System.out.println("AddPerson_Test addEersteExaminatorTestcase= OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -299,6 +304,7 @@ public class AddPerson_Test {
 		assertEquals(PersonData.person4Role, AddPersonModules.selectedPersonRole(driver).getText());
 
 		// end testcase
+		System.out.println("AddPerson_Test addTweedeExaminatorTestcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 
@@ -349,6 +355,7 @@ public class AddPerson_Test {
 		assertEquals(PersonData.person5Role, AddPersonModules.selectedPersonRole(driver).getText());
 
 		// end testcase
+		System.out.println("AddPerson_Test addGecommitteerdeTestcase = OK");
 		DefaultModules.endTestcase(driver);
 	}
 

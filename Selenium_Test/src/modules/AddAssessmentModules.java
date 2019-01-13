@@ -43,8 +43,93 @@ public class AddAssessmentModules {
 		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[1]/div[1]/div"));
 	}
 
-	public static WebElement studentSelectionDropdown(WebDriver driver) {
-		return driver.findElement(By.cssSelector("#AddAssessmentScreen.AddAssessment.StudentID"));
+	// selected assessment Student
+	public static WebElement selectedAssessmentStudent(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[2]/div[2]/div"));
 	}
 
+	// selected assessment EditStudent
+	public static WebElement selectedAssessmentEditStudent(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.ManageAssessment.StudentID\"]"));
+	}
+
+	// selected assessment VOE code
+	public static WebElement selectedAssessmentVOECode(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[3]/div[2]/div"));
+	}
+
+	// selected assessment edit VOE code
+	public static WebElement selectedAssessmentEditVOECode(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.ManageAssessment.VOEcode\"]"));
+	}
+
+	// selected assessment company
+	public static WebElement selectedAssessmentCompany(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[4]/div[2]/div"));
+	}
+
+	// selected assessment edit company
+	public static WebElement selectedAssessmentEditCompany(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.ManageAssessment.BedrijfsID\"]"));
+	}
+
+	// selected assessment periodFrom
+	public static WebElement selectedAssessmentPeriodFrom(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[5]/div[2]/div"));
+	}
+
+	// selected assessment editPeriodFrom
+	public static WebElement selectedAssessmentEditPeriodFrom(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"PeriodeVan_input\"]"));
+	}
+
+	// selected assessment periodTo
+	public static WebElement selectedAssessmentPeriodTo(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[6]/div[2]/div"));
+	}
+
+	// selected assessment editperiodTo
+	public static WebElement selectedAssessmentEditPeriodTo(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"PeriodeTot_input\"]"));
+	}
+
+	// selected assessment assessmentDate
+	public static WebElement selectedAssessmentDate(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[2]/div[7]/div[2]/div"));
+	}
+
+	// selected assessment editassessmentDate
+	public static WebElement selectedAssessmentEditDate(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"DatumAssessment_input\"]"));
+	}
+
+	// selected assessment EersteExaminator
+	public static WebElement selectedAssessmentEersteExaminator(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[3]/div[1]/div[2]/div"));
+	}
+
+	// selected assessment EditEersteExaminator
+	public static WebElement selectedAssessmentEditEersteExaminator(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.ManageAssessment.Examinator1\"]"));
+	}
+
+	// selected assessment TweedeExaminator
+	public static WebElement selectedAssessmentTweedeExaminator(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[3]/div[2]/div[2]/div"));
+	}
+
+	// selected assessment EditTweedeExaminator
+	public static WebElement selectedAssessmentEditTweedeExaminator(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.ManageAssessment.Examinator2\"]"));
+	}
+
+	// selected assessment Gecommitteerde
+	public static WebElement selectedAssessmentGecommitteerde(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[3]/div/form/div[3]/div[3]/div[2]/div"));
+	}
+
+	// selected assessment EditGecommitteerde
+	public static WebElement selectedAssessmentEditGecommitteerde(WebDriver driver) {
+		return driver.findElement(By.xpath("//*[@id=\"ManageAssessmentScreen.ManageAssessment.Gecommiteerde\"]"));
+	}
 }

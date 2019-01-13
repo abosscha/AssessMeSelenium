@@ -2,8 +2,6 @@ package data;
 
 public class CompanyData {
 
-	// naam straatnaam huisnummer toevoeging postcode plaats land telefoonnummer
-
 	public static String company1Name = "Bedrijf 1";
 	public static String company1StreetName = "straatnaamEen";
 	public static String company1HouseNumber = "1";
@@ -44,7 +42,7 @@ public class CompanyData {
 	public static String company5StreetName = "StraatnaamVijf";
 	public static String company5HouseNumber = "5";
 	public static String company5HouseNumberAddition = "";
-	public static String company5PostalCode = "5555EE0";
+	public static String company5PostalCode = "5555EE";
 	public static String company5City = "StadVijf";
 	public static String company5Country = "LandVijf";
 	public static String company5TelephoneNumber = "7531948260";
