@@ -32,12 +32,11 @@ public class Setup {
 		return driver;
 	}
 
+	// Eat cookies, set the wait, maximize window and GO!
 	public static void setupBrowserForTestRun(WebDriver driver, String server) {
-		// Eat cookies, set the wait, maximize window and GO!
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		// driver.navigate().to(server);
 		driver.get(server);
 
 	}

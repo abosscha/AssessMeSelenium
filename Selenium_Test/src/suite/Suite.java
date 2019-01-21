@@ -15,7 +15,7 @@ public class Suite {
 
 		// test Login
 		Login_Test.loginCorrectly(driver);
-		Login_Test.loginWithWrongUsernameAndWrongPassword(driver);
+//		Login_Test.loginWithWrongUsernameAndWrongPassword(driver);
 
 		// Add testdata --> Persons
 		AddPerson_Test.checkScreenData(driver);
@@ -40,7 +40,7 @@ public class Suite {
 		AddAssessments_Test.addFirstAssessment(driver);
 
 		// test assessment table
-//		Assessment_Test.test(driver);
+		Assessment_Test.test(driver);
 
 	}
 

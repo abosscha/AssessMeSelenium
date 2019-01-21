@@ -22,8 +22,8 @@ public class Init {
 		Setup.teardownLogoutAtEndOfTestRun(driver);
 	}
 
+	// close connections, close browser
 	public static void tearDownAfterTest(WebDriver driver) {
-		// close connections, close browser
 		Setup.teardownAfterTestRun(driver);
 	}
 

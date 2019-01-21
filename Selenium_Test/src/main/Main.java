@@ -16,14 +16,13 @@ public class Main {
 
 		// Initialize the Test Run
 		driver = Init.setupBeforeTest();
-//		Init.setupBeforeMethod(driver);
 
 		// Run the suite
 		Suite.testTheSuite(driver);
 
 		// And tear it down...
-//		Init.tearDownAfterMethod(driver);
-//		Init.tearDownAfterTest(driver);
+		Init.tearDownAfterMethod(driver);
+		Init.tearDownAfterTest(driver);
 
 	}
 
